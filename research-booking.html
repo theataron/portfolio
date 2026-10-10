@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How much website nudges move a booking decision — Aron Arany-Toth</title>
+<meta name="description" content="A survey of 213 people on how urgency and scarcity messages affect booking decisions, against the Booking.com competition case.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+(function(){var t="dark";try{t=localStorage.getItem("theme")||"dark";}catch(e){}document.documentElement.setAttribute("data-theme",t);})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="sidebar">
+  <div class="side-top">
+    <img class="signature" src="assets/signature.png" alt="">
+    <div class="side-name">
+      <strong>Aron Arany-Toth</strong>
+      <span>Digital marketing and growth</span>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle title="Switch to light mode" aria-label="Switch to light mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.4 14.3A8.5 8.5 0 0 1 9.7 3.6a8.5 8.5 0 1 0 10.7 10.7Z"/>
+      </svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/>
+      </svg>
+      <span class="sr-only theme-label">Light</span>
+    </button>
+  </div>
+
+  <nav class="nav" aria-label="Pages">
+    <a href="index.html">Home</a>
+    <p class="nav-group">Experience</p>
+    <a href="airhint.html" class="navsub two"><span class="n1">Growth marketing</span><span class="n2">AirHint</span></a>
+    <a href="publicis.html" class="navsub two"><span class="n1">Instagram rebranding</span><span class="n2">Publicis Groupe</span></a>
+    <a href="synetech.html" class="navsub two"><span class="n1">LinkedIn content strategy</span><span class="n2">Synetech</span></a>
+    <p class="nav-group">Research</p>
+    <a href="research.html" class="navsub">AI and product choice</a>
+    <a href="research-booking.html" class="navsub active">Website nudges</a>
+    <a href="content.html">Content</a>
+    <a href="skills.html">Skills and tools</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <button class="nav-connect" type="button" data-connect>Connect</button>
+
+  <div class="side-bottom">
+    <p>English · Español · Magyar</p>
+    <p>Madrid</p>
+  </div>
+</aside>
+
+<main id="main">
+
+<section class="section">
+  <p class="eyebrow">Research</p>
+  <h1 class="page-title">How much website nudges move a booking decision</h1>
+  <p class="case-meta">BSc thesis · Corvinus University of Budapest · 2023</p>
+
+  <p class="why"><strong>Relevance.</strong> Scarcity, social proof and urgency are the mechanisms behind most conversion work, and this is me measuring how well they actually work, on whom, and where the legal line sits.</p>
+
+  <p class="lead">Every booking site runs the same set of mechanisms on you. Scarcity, social proof, urgency framing, loss aversion, defaults, anchoring. They are the most reliable conversion tools there are, which is why they are everywhere, and they sit closer to the legal line than most of the people deploying them realise. I wrote my bachelor thesis on how well they actually work, on whether anyone notices them, and on where regulators have drawn that line.</p>
+
+  <h2 class="sub">The case that prompted it</h2>
+  <p>In 2020 the Hungarian Competition Authority fined Booking.com 2.5 billion forint. Three violations. Free cancellation was advertised as a feature when at many properties it was only temporarily available, and those bookings cost more than the same stay without it, because the price of the option was folded into the fare. Urgency and scarcity messages appeared at every step of the search and booking flow. And information about which properties accepted the Hungarian leisure card was inconsistent. The fine was calculated against commission revenue from the affected bookings.</p>
+
+  <h2 class="sub">The mechanisms, as they appear on the page</h2>
+  <p>These are the five I tested. Scarcity of supply, a time-limited offer, live social proof, recent social proof, and a membership default framed as a loss if you skip it.</p>
+  <figure class="fig narrow">
+    <img src="assets/research/booking-messages.jpg" alt="Five booking site message mockups: sign in and save 10 percent or more, limited time offer, 3 people are viewing this right now, only 2 rooms left, 22 people booked here in the past week">
+    <figcaption>Top to bottom: sign in and save 10% or more · limited time offer · 3 people are viewing this right now · only 2 rooms left · 22 people booked here in the past week. Two of these were live on the site at the time of the ruling.</figcaption>
+  </figure>
+
+  <h2 class="sub">How I measured them</h2>
+  <p>A 24 question survey, 213 respondents, anonymous. 72.3% women, the largest group aged 18 to 25 and a second cluster aged 46 to 55. Over 99% travel at least once a year and 61.5% book their own accommodation online. Booking.com was the platform they used most.</p>
+  <p>The order of the questions carried the method. Asking someone outright whether an urgency message influenced them does not work, because the influence is mostly not conscious and the question invites a no. So the early questions established what they think they look at, and only later did I name the mechanisms and show them the formats above.</p>
+
+  <h2 class="sub">Unprompted, almost nobody names them</h2>
+  <p>Asked in an open question which messages or factors had influenced their booking decisions, 9 of 213 mentioned urgency messages. Ten mentioned free cancellation. Everyone else named price, reviews, location and amenities. The practices the regulator fined a company over barely registered as things that happen.</p>
+
+  <h2 class="sub">Shown the same messages, they rate them as persuasive</h2>
+  <figure class="chart-fig"><svg class="chart" viewBox="0 0 640 256" role="img" xmlns="http://www.w3.org/2000/svg">
+<line x1="268.0" y1="6" x2="268.0" y2="214" class="c-grid"/>
+<text x="268.0" y="230" class="c-tick" text-anchor="middle">1</text>
+<line x1="332.4" y1="6" x2="332.4" y2="214" class="c-grid"/>
+<text x="332.4" y="230" class="c-tick" text-anchor="middle">2</text>
+<line x1="396.8" y1="6" x2="396.8" y2="214" class="c-grid"/>
+<text x="396.8" y="230" class="c-tick" text-anchor="middle">3</text>
+<line x1="461.2" y1="6" x2="461.2" y2="214" class="c-grid"/>
+<text x="461.2" y="230" class="c-tick" text-anchor="middle">4</text>
+<line x1="525.6" y1="6" x2="525.6" y2="214" class="c-grid"/>
+<text x="525.6" y="230" class="c-tick" text-anchor="middle">5</text>
+<line x1="590.0" y1="6" x2="590.0" y2="214" class="c-grid"/>
+<text x="590.0" y="230" class="c-tick" text-anchor="middle">6</text>
+<path class="c-bar" d="M268,6 L434.7,6 Q438.7,6 438.7,10 L438.7,32 Q438.7,36 434.7,36 L268,36 Z"><title>Only 2 rooms left: 3.65</title></path>
+<text x="256" y="25.5" class="c-lab" text-anchor="end">Only 2 rooms left</text>
+<text x="447.7" y="25.5" class="c-val">3.65</text>
+<path class="c-bar" d="M268,48 L432.7,48 Q436.7,48 436.7,52 L436.7,74 Q436.7,78 432.7,78 L268,78 Z"><title>Sign in to save 10% or more: 3.62</title></path>
+<text x="256" y="67.5" class="c-lab" text-anchor="end">Sign in to save 10% or more</text>
+<text x="445.7" y="67.5" class="c-val">3.62</text>
+<path class="c-bar" d="M268,90 L399.2,90 Q403.2,90 403.2,94 L403.2,116 Q403.2,120 399.2,120 L268,120 Z"><title>Limited time offer: 3.1</title></path>
+<text x="256" y="109.5" class="c-lab" text-anchor="end">Limited time offer</text>
+<text x="412.2" y="109.5" class="c-val">3.10</text>
+<path class="c-bar" d="M268,132 L391.5,132 Q395.5,132 395.5,136 L395.5,158 Q395.5,162 391.5,162 L268,162 Z"><title>22 people booked here this week: 2.98</title></path>
+<text x="256" y="151.5" class="c-lab" text-anchor="end">22 people booked here this week</text>
+<text x="404.5" y="151.5" class="c-val">2.98</text>
+<path class="c-bar" d="M268,174 L364.5,174 Q368.5,174 368.5,178 L368.5,200 Q368.5,204 364.5,204 L268,204 Z"><title>3 people are viewing this now: 2.56</title></path>
+<text x="256" y="193.5" class="c-lab" text-anchor="end">3 people are viewing this now</text>
+<text x="377.5" y="193.5" class="c-val">2.56</text>
+<text x="268" y="250" class="c-note">1 no pull at all &#183; 6 very strong pull</text>
+</svg><figcaption>Rated persuasive power of each message. 213 respondents.</figcaption></figure>
+  <p>Scarcity of the room count scored highest and live social proof lowest, which is the reverse of what I expected going in. The two strongest are both about something running out, whether that is stock or a discount, while the two weakest are both claims about other people, which also happen to be the easiest ones to disbelieve.</p>
+
+  <h2 class="sub">People have to believe it for it to work</h2>
+  <p>Asked how often these messages carry real information, on a scale of one to six, the average was 3.18. People lean towards assuming the claim is not true. And belief turns out to track persuasion almost linearly.</p>
+  <figure class="chart-fig"><svg class="chart" viewBox="0 0 640 282" role="img" xmlns="http://www.w3.org/2000/svg">
+<line x1="46" y1="236.0" x2="630" y2="236.0" class="c-grid"/>
+<text x="36" y="240.0" class="c-tick" text-anchor="end">1</text>
+<line x1="46" y1="194.0" x2="630" y2="194.0" class="c-grid"/>
+<text x="36" y="198.0" class="c-tick" text-anchor="end">2</text>
+<line x1="46" y1="152.0" x2="630" y2="152.0" class="c-grid"/>
+<text x="36" y="156.0" class="c-tick" text-anchor="end">3</text>
+<line x1="46" y1="110.0" x2="630" y2="110.0" class="c-grid"/>
+<text x="36" y="114.0" class="c-tick" text-anchor="end">4</text>
+<line x1="46" y1="68.0" x2="630" y2="68.0" class="c-grid"/>
+<text x="36" y="72.0" class="c-tick" text-anchor="end">5</text>
+<line x1="46" y1="26.0" x2="630" y2="26.0" class="c-grid"/>
+<text x="36" y="30.0" class="c-tick" text-anchor="end">6</text>
+<path class="c-bar" d="M71.7,236 L71.7,198.8 Q71.7,194.8 75.7,194.8 L113.7,194.8 Q117.7,194.8 117.7,198.8 L117.7,236 Z"><title>1: 1.98</title></path>
+<text x="94.7" y="185.8" class="c-val" text-anchor="middle">1.98</text>
+<text x="94.7" y="256.0" class="c-tick" text-anchor="middle">1</text>
+<path class="c-bar" d="M169.0,236 L169.0,157.3 Q169.0,153.3 173.0,153.3 L211.0,153.3 Q215.0,153.3 215.0,157.3 L215.0,236 Z"><title>2: 2.97</title></path>
+<text x="192.0" y="144.3" class="c-val" text-anchor="middle">2.97</text>
+<text x="192.0" y="256.0" class="c-tick" text-anchor="middle">2</text>
+<path class="c-bar" d="M266.3,236 L266.3,149.3 Q266.3,145.3 270.3,145.3 L308.3,145.3 Q312.3,145.3 312.3,149.3 L312.3,236 Z"><title>3: 3.16</title></path>
+<text x="289.3" y="136.3" class="c-val" text-anchor="middle">3.16</text>
+<text x="289.3" y="256.0" class="c-tick" text-anchor="middle">3</text>
+<path class="c-bar" d="M363.7,236 L363.7,113.2 Q363.7,109.2 367.7,109.2 L405.7,109.2 Q409.7,109.2 409.7,113.2 L409.7,236 Z"><title>4: 4.02</title></path>
+<text x="386.7" y="100.2" class="c-val" text-anchor="middle">4.02</text>
+<text x="386.7" y="256.0" class="c-tick" text-anchor="middle">4</text>
+<path class="c-bar" d="M461.0,236 L461.0,118.2 Q461.0,114.2 465.0,114.2 L503.0,114.2 Q507.0,114.2 507.0,118.2 L507.0,236 Z"><title>5: 3.9</title></path>
+<text x="484.0" y="105.2" class="c-val" text-anchor="middle">3.90</text>
+<text x="484.0" y="256.0" class="c-tick" text-anchor="middle">5</text>
+<path class="c-bar" d="M558.3,236 L558.3,92.2 Q558.3,88.2 562.3,88.2 L600.3,88.2 Q604.3,88.2 604.3,92.2 L604.3,236 Z"><title>6: 4.52</title></path>
+<text x="581.3" y="79.2" class="c-val" text-anchor="middle">4.52</text>
+<text x="581.3" y="256.0" class="c-tick" text-anchor="middle">6</text>
+<text x="46" y="274" class="c-note">How often do these messages tell the truth? 1 never &#183; 6 always</text>
+<text x="14" y="131.0" class="c-note" text-anchor="middle" transform="rotate(-90 14 131.0)">Persuasive power</text>
+</svg><figcaption>Persuasive power by how much the respondent believes the claim.</figcaption></figure>
+  <p>What makes these messages work is not really how they are worded, it is whether people believe them. If nobody believes the claim then the message is just one more thing on the page, and a false one makes the true ones next to it harder to believe as well. Which means the honest version of the tactic also happens to be the one that keeps working.</p>
+
+  <h2 class="sub">They put it at nearly half the decision</h2>
+  <div class="hero-stat">
+    <span class="hero-num">46%</span>
+    <p>of the booking decision, by respondents' own estimate, comes down to these messages rather than to the price, the location and the services. People who could not name a single one of them ten minutes earlier.</p>
+  </div>
+
+  <h2 class="sub">Where the two regulators differ</h2>
+  <p>Comparing the Hungarian and Dutch responses to the same company is the useful part. The Dutch authority issued guidance in 2020 on online commercial practices that influence consumer decisions, but did not directly address emotional, urgency-based messaging. Foreign authorities have generally examined whether a claim is misleading and pushed for transparency. The Hungarian decision went further and treated commercial practice built on psychological pressure as harm to consumer welfare in itself, which at the time was unusual internationally.</p>
+
+  <h2 class="sub">Conclusions</h2>
+  <p>The first thing to say is what this study cannot do: it was a survey, so people were rating messages that I had shown them and asked them to think about, which is nothing like a person booking a trip with their own money. Survey conditions make people more deliberate than they are in real life, and they can only report the influence they are aware of, which the unprompted question had already shown is not much. The honest measurement of a button or a message is on a live page, with real traffic split between two versions.</p>
+  <p>What the research did give me is a clear picture of the mechanisms and of where the legal line runs, which turns out to be about whether the claim is true rather than whether the technique is used at all. Only two rooms left is fine to show if two rooms are left. The enforcement in the Booking.com case did not land on urgency messaging existing. It landed on claims that were not accurate and terms that were not what they appeared to be.</p>
+  <p>It also pointed me at what I do now. Writing it is what made me want to measure these things properly instead of asking people about them, and at <a href="airhint.html">AirHint</a> I get to, with A/B tests on the real page and real traffic.</p>
+
+  <p class="links">Sources: GVH decision VJ/17-110/2018 · ACM, Guidelines on Protection of the Online Consumer, 2020</p>
+</section>
+
+
+<nav class="onward" aria-label="More pages">
+  <p class="onward-label">Want to browse more?</p>
+  <div class="onward-links">
+    <a href="content.html">Content</a>
+    <a href="skills.html">Skills and tools</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+<footer class="pagefoot">
+  <button class="foot-connect btn primary" type="button" data-connect>Connect</button>
+</footer>
+</main>
+
+<dialog id="connect-panel" class="connect">
+  <div class="connect-inner">
+    <button class="connect-close" type="button" data-connect-close aria-label="Close">&times;</button>
+    <h2 class="connect-title">Connect</h2>
+
+    <div class="c-block">
+      <p class="c-label">Email</p>
+      <p class="c-val">aranytotharon@gmail.com</p>
+      <div class="c-actions">
+        <a class="btn primary" href="mailto:aranytotharon@gmail.com">Compose an email</a>
+        <button class="btn" type="button" data-copy="aranytotharon@gmail.com">Copy address</button>
+      </div>
+    </div>
+
+    <div class="c-block">
+      <p class="c-label">Stay in touch</p>
+      <p class="c-note">I am most responsive on LinkedIn.</p>
+      <div class="c-actions">
+        <a class="btn" href="https://www.linkedin.com/in/aron-arany-toth/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="c-block">
+      <p class="c-label">CV</p>
+      <div class="c-actions">
+        <a class="btn" href="assets/cv.pdf">Download as PDF</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>

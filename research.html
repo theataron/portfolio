@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Does an AI recommendation change what you buy? — Aron Arany-Toth</title>
+<meta name="description" content="A controlled experiment with 192 participants on AI product recommendations and consumer choice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+(function(){var t="dark";try{t=localStorage.getItem("theme")||"dark";}catch(e){}document.documentElement.setAttribute("data-theme",t);})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="sidebar">
+  <div class="side-top">
+    <img class="signature" src="assets/signature.png" alt="">
+    <div class="side-name">
+      <strong>Aron Arany-Toth</strong>
+      <span>Digital marketing and growth</span>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle title="Switch to light mode" aria-label="Switch to light mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.4 14.3A8.5 8.5 0 0 1 9.7 3.6a8.5 8.5 0 1 0 10.7 10.7Z"/>
+      </svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/>
+      </svg>
+      <span class="sr-only theme-label">Light</span>
+    </button>
+  </div>
+
+  <nav class="nav" aria-label="Pages">
+    <a href="index.html">Home</a>
+    <p class="nav-group">Experience</p>
+    <a href="airhint.html" class="navsub two"><span class="n1">Growth marketing</span><span class="n2">AirHint</span></a>
+    <a href="publicis.html" class="navsub two"><span class="n1">Instagram rebranding</span><span class="n2">Publicis Groupe</span></a>
+    <a href="synetech.html" class="navsub two"><span class="n1">LinkedIn content strategy</span><span class="n2">Synetech</span></a>
+    <p class="nav-group">Research</p>
+    <a href="research.html" class="navsub active">AI and product choice</a>
+    <a href="research-booking.html" class="navsub">Website nudges</a>
+    <a href="content.html">Content</a>
+    <a href="skills.html">Skills and tools</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <button class="nav-connect" type="button" data-connect>Connect</button>
+
+  <div class="side-bottom">
+    <p>English · Español · Magyar</p>
+    <p>Madrid</p>
+  </div>
+</aside>
+
+<main id="main">
+
+<section class="section">
+  <p class="eyebrow">Research</p>
+  <h1 class="page-title">Does an AI recommendation change what you buy?</h1>
+  <p class="case-meta">MSc thesis · Universidad Carlos III de Madrid · 2026</p>
+
+  <p class="why"><strong>Relevance.</strong> It is the clearest evidence I have of designing a study, running it properly and then reading the result honestly, including the part where my own hypothesis did not hold.</p>
+
+  <p class="lead">A while ago I typed something like "I don't know anything about vacuum cleaners, which one should I buy" into ChatGPT, and then followed the recommendation. I did not check the specs or compare anything, I went straight to the purchase page. I assumed I was not the only one, and nobody had tested what that does to how we decide, so I made it my thesis.</p>
+
+  <figure class="fig">
+    <img src="assets/thesis-chart.jpg" alt="30 percent chose the product without an AI recommendation, 47 percent chose it with one. n=192, p=.015, Cramer's V .176">
+  </figure>
+
+  <h2 class="sub">Method</h2>
+  <p>A controlled between-subjects experiment with 192 participants. Everyone evaluated two pairs of wireless headphones. One group saw an AI recommendation, the other did not. I measured which product they chose, how long they took, and how confident they felt about the choice. Analysis in SPSS.</p>
+
+  <h2 class="sub">Findings</h2>
+  <p>The recommendation shifted product choice. 47% of the AI group picked the recommended product against 30% in the control group, a 17 point difference, significant at p=.015. The two products were fictional, Auro X3 and Velion S7, so there was no brand preference carried into the task.</p>
+  <figure class="fig">
+    <img src="assets/research/choice.jpg" alt="Product choice by condition. Control group: 70% Auro X3, 30% Velion S7. AI group: 53% and 47%.">
+  </figure>
+  <p>Decision time showed no significant difference either, and if anything the median ran slightly higher in the AI group rather than lower, with a wide spread in both conditions.</p>
+  <figure class="fig">
+    <img src="assets/research/time.jpg" alt="Box plot of decision time in seconds by condition, control against AI, with overlapping distributions">
+  </figure>
+  <p>Confidence showed no significant difference either, 4.46 in the control group against 4.60 with the recommendation.</p>
+  <figure class="fig">
+    <img src="assets/research/confidence.jpg" alt="Decision confidence by condition. Control 4.46, AI 4.60, with overlapping error bars.">
+  </figure>
+  <p>So people did not decide any faster and they did not feel any more certain, they simply chose differently, which on these results makes the recommendation a persuasion tool rather than a shortcut.</p>
+
+  <h2 class="sub">Why that was not the prediction</h2>
+  <p>Dual-process theory and the heuristic-systematic model suggest you offload the thinking, decide faster and feel better about it. Only the first hypothesis held. Two things probably explain the rest. The AI group was looking at a structurally larger information environment, which may have cancelled out any time saved. And people in a research setting think more deliberately than people spending their own money, where leaning on a shortcut is more natural.</p>
+
+  <h2 class="sub">Limitations</h2>
+  <p>The sample was a convenience one, 75% female and skewed young and educated, the brands were fictional and there was only a single product category, so the effect could look quite different for a higher stakes purchase or for someone less used to AI.</p>
+
+  <h2 class="sub">Why it matters now</h2>
+  <p>Amazon Rufus, Google AI Overviews and Klarna are already steering millions of purchase decisions a day. Adobe Analytics reported a 1,200% increase in retail traffic from generative AI sources between mid 2024 and early 2025. The technology is ahead of the regulation and the evidence base is still thin.</p>
+
+  <h2 class="sub">The question I would ask next</h2>
+  <p>AI shifts the decision. Whether it shifts it in a better direction is a separate question, and this experiment does not answer it. I measured what people chose and how sure they felt while choosing, not whether the product was right for them or whether they were still happy with it a month later. A recommendation that moves choice and raises satisfaction and one that moves choice and lowers it look identical in my data. Measuring satisfaction after the purchase instead of confidence during it is where I would take this next.</p>
+</section>
+
+
+<nav class="onward" aria-label="More pages">
+  <p class="onward-label">Want to browse more?</p>
+  <div class="onward-links">
+    <a href="research-booking.html">Website nudges (research)</a>
+    <a href="content.html">Content</a>
+    <a href="skills.html">Skills and tools</a>
+  </div>
+</nav>
+<footer class="pagefoot">
+  <button class="foot-connect btn primary" type="button" data-connect>Connect</button>
+</footer>
+</main>
+
+<dialog id="connect-panel" class="connect">
+  <div class="connect-inner">
+    <button class="connect-close" type="button" data-connect-close aria-label="Close">&times;</button>
+    <h2 class="connect-title">Connect</h2>
+
+    <div class="c-block">
+      <p class="c-label">Email</p>
+      <p class="c-val">aranytotharon@gmail.com</p>
+      <div class="c-actions">
+        <a class="btn primary" href="mailto:aranytotharon@gmail.com">Compose an email</a>
+        <button class="btn" type="button" data-copy="aranytotharon@gmail.com">Copy address</button>
+      </div>
+    </div>
+
+    <div class="c-block">
+      <p class="c-label">Stay in touch</p>
+      <p class="c-note">I am most responsive on LinkedIn.</p>
+      <div class="c-actions">
+        <a class="btn" href="https://www.linkedin.com/in/aron-arany-toth/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="c-block">
+      <p class="c-label">CV</p>
+      <div class="c-actions">
+        <a class="btn" href="assets/cv.pdf">Download as PDF</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
