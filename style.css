@@ -1298,3 +1298,5 @@ p { margin: 0 0 1.15rem; }
   * { transition: none !important; animation: none !important; }
   .book, .flat { opacity: 1; transform: none; }
 }
+
+.fig-narrow { max-width: 420px; }

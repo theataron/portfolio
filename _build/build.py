@@ -15,6 +15,7 @@ NAV = [
     ("group", "Experience", [
         ("airhint.html",  "Growth marketing", "AirHint"),
         ("publicis.html", "Instagram rebranding", "Publicis Groupe"),
+        ("disney.html",   "Media planning", "Disney"),
         ("synetech.html", "LinkedIn content strategy", "Synetech"),
     ]),
     ("group", "Research", [
@@ -40,6 +41,7 @@ LABEL = dict(FLAT)
 ONWARD_LABEL = dict(LABEL, **{
     "airhint.html":          "Growth marketing (AirHint)",
     "publicis.html":         "Instagram rebranding (Publicis)",
+    "disney.html":           "Media planning (Disney)",
     "synetech.html":         "LinkedIn content strategy (Synetech)",
     "research.html":         "AI and product choice (research)",
     "research-booking.html": "Website nudges (research)",
@@ -351,7 +353,7 @@ home = """
       </a>
       <div class="card-body">
         <h3><a href="airhint.html">Growth at AirHint</a></h3>
-        <p class="card-lead">Paid search, SEO, analytics, conversion and the CRM, all of it mine, for a product that only earns when a visit ends in a booking click.</p>
+        <p class="card-lead">A deals page relaunch that nearly tripled conversions from its visitors, a new site header, an A/B testing programme and the CRM, for a flight price prediction product with 500k+ monthly sessions.</p>
         <p class="card-meta">Growth Marketing Manager · May 2026 to now</p>
         <a href="airhint.html">Read it</a>
       </div>
@@ -366,6 +368,18 @@ home = """
         <p class="card-lead">Views per post up 57%, shares up 388%, and the highest engagement rate of the five agency accounts tracked, out of a content strategy built from a coded competitor database.</p>
         <p class="card-meta">Junior Digital Strategist · August 2024 to August 2025</p>
         <a href="publicis.html">Read it</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <a class="thumb wide" href="disney.html">
+        <img src="assets/disney/shogun-shelter.jpg" alt="A Budapest bus shelter fully wrapped for the Shōgun launch on Disney+">
+      </a>
+      <div class="card-body">
+        <h3><a href="disney.html">Planning Disney's media in Hungary</a></h3>
+        <p class="card-lead">Title launches for Disney+, National Geographic and Disney Channel across TV, outdoor, radio, online and partnerships, including a food delivery partnership for Shōgun.</p>
+        <p class="card-meta">Junior Integrated Media Planner · September 2022 to August 2024</p>
+        <a href="disney.html">Read it</a>
       </div>
     </article>
 
@@ -441,10 +455,9 @@ home = """
           <span class="tl-org">AirHint &middot; Madrid, remote</span>
         </summary>
         <ul class="tl-points">
-          <li>Google Ads search campaigns in English, Spanish and Portuguese.</li>
-          <li>SEO, and daily traffic analysis in Google Analytics and Search Console, including the work on where the site&rsquo;s AI referral traffic comes from and why it converts four times better than average.</li>
-          <li>Conversion analysis and A/B tests in GrowthBook.</li>
-          <li>The CRM and email lifecycle I am building in Brevo.</li>
+          <li>Relaunched the deals page. Conversions from its visitors nearly tripled, and their share of all conversions went from 3.3% to 7.7%.</li>
+          <li>A new site header and How it works page, A/B tests in GrowthBook, and the analysis of why the site&rsquo;s AI referral traffic converts four times better than average.</li>
+          <li>The CRM and email programme in Brevo, B2B partnerships, and the yearly growth plan.</li>
         </ul>
         <p class="tl-link"><a href="airhint.html">Read the case study</a></p>
       </details>
@@ -498,10 +511,11 @@ home = """
           <span class="tl-org">Publicis Groupe Hungary &middot; Budapest</span>
         </summary>
         <ul class="tl-points">
-          <li>Planned and monitored integrated campaigns across digital (local, social, programmatic), television, out of home, radio and partnerships, the largest of them carrying a yearly budget over &euro;4M.</li>
+          <li>Planned and monitored integrated campaigns across digital (local, social, programmatic), television, out of home, radio and partnerships, with budgets of several million euros a year.</li>
           <li>Clients: Disney, Disney+, National Geographic, Disney Channel, Lindt, Diageo and Spin Master, planned and tracked in Excel.</li>
           <li>Ad serving and audience research in Campaign Manager, AdReal, Gemius, Kantar and TGI, with the work tracked in Jira.</li>
         </ul>
+        <p class="tl-link"><a href="disney.html">Read the case study</a></p>
       </details>
     </li>
   </ol>
@@ -520,74 +534,111 @@ airhint = """
   <h1 class="page-title">Growth at <a href="https://www.airhint.com" target="_blank" rel="noopener">AirHint</a></h1>
   <p class="case-meta">Growth Marketing Manager &middot; May 2026 to now &middot; Madrid, remote</p>
 
-  <p class="lead">AirHint predicts whether a flight price is going to rise or fall and tells you when to book. It is an early stage product with an engineering founder and no marketing function before I joined, so <span class="hi">paid search, SEO, analytics, conversion and the CRM are all mine</span>.</p>
+  <p class="lead">AirHint predicts whether a flight price is going to rise or fall and tells you when to book. It has 500k+ sessions a month and about 150k subscribers. Before I joined there was an engineering founder and no marketing function. <span class="hi">I work directly with the CEO on conversion, experimentation, analytics, the CRM and revenue.</span></p>
 
-  <h2 class="sub">Revenue model</h2>
-  <p>Revenue comes from Skyscanner affiliate links and display ads, so a visit only earns anything if it ends in a booking click. That makes traffic volume on its own close to meaningless, and it decides which searches are worth bidding on and which pages are worth fixing. It is the first job where I work backwards from what a visitor is actually worth, rather than against a campaign target someone else had already set.</p>
+  <div class="statrow">
+    <div><strong>&times;2.9</strong><span>conversions from deals page visitors after the relaunch</span></div>
+    <div><strong>3.3% &rarr; 7.7%</strong><span>their share of all conversions</span></div>
+    <div><strong>+27%</strong><span>homepage to deals click-through after the new header</span></div>
+  </div>
 
-  <h2 class="sub">Paid search</h2>
-  <p>I plan and run the Google Ads search campaigns myself, managed against cost per booking click.</p>
-  <ul class="bullets">
-    <li>Three languages: English, Spanish and Portuguese</li>
-    <li>Budget, bidding, keywords and ad copy, all mine</li>
-    <li>The only paid platform I have bought on directly. At Publicis I planned and monitored Meta and TikTok budgets, which is a different job</li>
-  </ul>
+  <h2 class="sub">How the product makes money</h2>
+  <p>Revenue comes from Skyscanner affiliate links and display ads. AirHint earns when a visitor clicks through to book, so I measure my work in booking clicks, not sessions. I also work on new revenue lines. Companies regularly asked about using AirHint's predictions through the business page, and those requests were going unanswered. I took over the follow-up, and I am now working on getting the AirHint module embedded on other websites.</p>
 
-  <h2 class="sub">SEO</h2>
-  <p>Organic search brings in most of the site's traffic, so a good share of my week goes on reading what already works and finding what is missing.</p>
-  <ul class="bullets">
-    <li>Going through page content to see which queries a page could realistically answer</li>
-    <li>Finding keywords with enough volume to justify building a page around them</li>
-    <li>Checking in Search Console which of those pages earn clicks once they rank</li>
-  </ul>
-  <p>I worked alongside the SEO team at Publicis before this, which is where I picked up most of the method. <span class="hi">For the terms we target, AirHint currently comes out as the first result.</span></p>
+  <h2 class="sub">Deals page relaunch</h2>
+  <p>I redesigned the deals page. It now shows the cheapest flights from a home airport the visitor selects, with each destination on its own card. The new part is that visitors can run a price prediction directly from a deal, which the old page did not offer.</p>
+  <figure class="fig">
+    <img src="assets/airhint/deals-page.jpg" alt="The AirHint deals page">
+  </figure>
+  <p>After launch, conversions from deals page visitors on the prediction page nearly tripled (&times;2.9), and <span class="hi">their share of all conversions went from 3.3% to 7.7%</span>.</p>
 
-  <h2 class="sub">Traffic analysis</h2>
-  <p>I am in Google Analytics and Search Console most days to answer one question: which traffic is worth having. A channel that sends plenty of sessions and no booking clicks is a cost rather than a win, so the work is breaking traffic down by source, country, device and landing page, and seeing which combinations end in someone clicking through to the airline.</p>
+  <h2 class="sub">Navigation and the How it works page</h2>
+  <p>I proposed a new header structure based on traffic data, including an alerts entry that changes with login state. Signed-in users go to their alerts, and signed-out users get a page explaining what alerts do. After launch, homepage to deals click-through rose 27% while overall homepage conversion held steady (+2.4%).</p>
+  <p>I also restructured the How it works page. Its traffic doubled once it was in the header, and average engagement time rose 20% after the rebuild.</p>
 
-  <p class="kicker">The piece I am most pleased with is an analysis of the site's AI referral traffic, which had grown into a real channel while nobody was looking at it properly.</p>
+  <h2 class="sub">Experimentation</h2>
+  <p>I set up A/B testing in GrowthBook: metrics, assignment, targeting and decision rules. The first major test was on the prediction result panel. It failed, so I designed a full redesign of the panel as the follow-up test.</p>
+  <figure class="fig">
+    <img src="assets/airhint/growthbook.jpg" alt="A GrowthBook experiment results screen with the test name and metric names hidden, showing a goal metric up and a guardrail metric down">
+  </figure>
+  <p>One of the tests, with the test and the metrics covered. I choose the guardrail metric before each test launches, because a variant can win on its primary metric while hurting another one that matters more.</p>
+
+  <h2 class="sub">AI search traffic</h2>
+  <p>I am in Google Analytics and Search Console most days, breaking traffic down by source, country, device and landing page to see which combinations end in a booking click. The most useful piece so far was an analysis of the site's AI referral traffic, which had grown into a real channel while nobody was looking at it properly.</p>
 
   <div class="statrow">
     <div><strong>99.6%</strong><span>of that traffic is ChatGPT, every other assistant together is a rounding error</span></div>
-    <div><strong>4&times;</strong><span>the site's average rate of clicking through to book</span></div>
-    <div><strong>3 of 4</strong><span>big competitors block the crawler that gets us cited</span></div>
+    <div><strong>~4%</strong><span>of sessions come from AI assistants</span></div>
+    <div><strong>~15%</strong><span>of conversions come from them, because they land on deep deal pages</span></div>
   </div>
 
   <ul class="bullets">
     <li>The countries it arrives from barely overlap with the countries our Google traffic comes from, which makes it a second market rather than a transfer of the first.</li>
-    <li>To work out why we get cited at all I read each major competitor's robots.txt by hand. Most of them block their flight pages with rules written years ago against scrapers, which happen to exclude the crawler that feeds ChatGPT. Expedia has opted in deliberately, so this is a window rather than a moat.</li>
-    <li>Almost all of this traffic lands on a static price table and almost none of it reaches the prediction, which is what the product is actually for. That is where the next piece of work came from.</li>
+    <li>Almost all of this traffic lands on a static price table and almost none of it reaches the prediction, which is what the product is actually for. That is where the deals page work came from.</li>
+    <li>I wrote a plan for getting AirHint cited by AI tools more often.</li>
   </ul>
-
-  <h2 class="sub">CRO and A/B testing</h2>
-  <p>This started with a conversion analysis of the homepage, which is where nearly everyone arrives and where the product gets used. I went through it the way a first time visitor does, and it produced a list of recommendations.</p>
-
-  <ul class="recs">
-    <li>
-      <span class="tag live">Live</span>
-      <strong>Messages while the prediction loads.</strong>
-      A prediction takes a few seconds to come back, and an empty wait makes a product feel slower than it is, so the loading state now moves through short lines explaining what is being checked, which spends time the visitor was going to spend anyway.
-    </li>
-    <li>
-      <span class="tag prod">In production</span>
-      <strong>A trust bar on the homepage.</strong>
-      The page asks people to act on a price forecast without giving them much reason to believe it, while the evidence, how the prediction is made and how often it has been right, sits on a separate page that almost nobody opens.
-    </li>
-    <li>
-      <span class="tag prod">In production</span>
-      <strong>A reworked deals page.</strong>
-      The old flow collected one filter per page load, the new structure puts them on a single page with results already on screen. The piece I actually care about, a price carrying a reference point so that &euro;41 reads as 38% below what the route normally costs, is not built yet.
-    </li>
-  </ul>
-
-  <p>Smaller changes get tested in GrowthBook: how a button is highlighted, how a panel is structured, where a call to action sits and how it is worded.</p>
-  <figure class="fig">
-    <img src="assets/airhint/growthbook.jpg" alt="A GrowthBook experiment results screen with the test name and metric names hidden, showing a goal metric up and a guardrail metric down">
-  </figure>
-  <p>One of them, with the test and the metrics covered. The habit I have taken from running these is picking the guardrail metric before launch rather than after, because a variant can win on the number you set while moving the number you actually care about in the opposite direction.</p>
 
   <h2 class="sub">CRM and email</h2>
-  <p>I am building the CRM and the email lifecycle in Brevo from scratch, so that one-off visitors become captured and nurtured leads rather than a single affiliate click that never comes back. This is in progress and I am not claiming results from it yet.</p>
+  <p>I designed a consent-based email programme in Brevo for the 150k subscriber base, with segments and triggers based on each user's own price predictions.</p>
+
+  <h2 class="sub">Smaller things I shipped</h2>
+  <ul class="bullets">
+    <li>Loading messages while a prediction runs, so the wait explains what is being checked</li>
+    <li>A share button on prediction results</li>
+    <li>AirHint's one-year growth plan for the CEO</li>
+  </ul>
+
+  <h2 class="sub">Earlier work: search</h2>
+  <p>When I started, I ran the Google Ads search campaigns in English, Spanish and Portuguese against cost per booking click, on a small budget. They are paused now. On SEO, I look at which queries a page can realistically answer and check in Search Console which pages earn clicks once they rank. <span class="hi">For the terms we target, AirHint currently comes out as the first result.</span></p>
+</section>
+"""
+
+# ----------------------------------------------------------------- DISNEY
+disney = """
+<section class="section">
+  <p class="eyebrow">Case study</p>
+  <h1 class="page-title">Planning Disney's media in Hungary</h1>
+  <p class="case-meta">Publicis Groupe Hungary &middot; Junior Integrated Media Planner &middot; September 2022 to August 2024</p>
+
+  <p class="lead">For two years I planned the media for Disney in Hungary, across Disney+, National Geographic and Disney Channel, with <span class="hi">budgets of several million euros a year</span>. Most of the work was title launches. A new series has a fixed release date, and everything has to go live on that day: TV, outdoor, radio, online and any partnership built around it.</p>
+
+  <h2 class="sub">The budget</h2>
+  <p>I decided how the budget was split across channels and checked that it was spent the way we planned. I built and tracked the plans in Excel. I also handled invoicing with vendors and with Disney in SAP.</p>
+
+  <h2 class="sub">TV</h2>
+  <p>I built the channel lists and the splits: which channels, which times of day, and how to combine them to reach the target audience. After a campaign aired, I checked GRP delivery in Kantar against the plan.</p>
+
+  <h2 class="sub">Outdoor</h2>
+  <p>For Sh&#333;gun we fully wrapped bus shelters in Budapest, ran a large LED fa&ccedil;ade on a shopping centre, and put a digital gate over the entrance of a supermarket.</p>
+  <figure class="fig">
+    <img src="assets/disney/shogun-shelter.jpg" alt="A Budapest bus shelter fully wrapped with Shōgun artwork and the Disney+ logo">
+  </figure>
+  <div class="fig-row">
+    <figure class="fig"><img src="assets/disney/shogun-tram.jpg" alt="Shōgun posters on a Budapest tram stop shelter"></figure>
+    <figure class="fig"><img src="assets/disney/shogun-facade.jpg" alt="A large LED façade on a shopping centre showing Shōgun on Disney+"></figure>
+    <figure class="fig"><img src="assets/disney/shogun-gate.jpg" alt="A digital Disney+ Shōgun gate over the entrance of a supermarket"></figure>
+  </div>
+  <p>For Avatar: The Way of Water we put water-effect foil on top of bus shelters, so standing underneath felt like being underwater. In summer we took the campaign to the lakes, with posters on the beach, a large column in a lakeside park and mist machines along the shore. After outdoor campaigns we received survey reports on ad recall and brand recognition.</p>
+  <div class="fig-row">
+    <figure class="fig"><img src="assets/disney/avatar-beach.jpg" alt="An Avatar: The Way of Water poster on a lakeside beach"></figure>
+    <figure class="fig"><img src="assets/disney/avatar-park.jpg" alt="A large Avatar: The Way of Water column in a lakeside park with Disney+ flags"></figure>
+  </div>
+
+  <h2 class="sub">Online</h2>
+  <p>Besides programmatic and social, we bought full homepage takeovers on mafab.hu, a Hungarian film database, for launches like Sh&#333;gun and Star Wars: The Acolyte. I set up the tracking tags in Google Campaign Manager and followed each placement's performance: impressions, clicks and viewability. Based on those results, I moved budget between placements and adjusted the splits while the campaign was running.</p>
+  <div class="fig-row">
+    <figure class="fig"><img src="assets/disney/mafab-shogun.jpg" alt="A Shōgun homepage takeover on mafab.hu"></figure>
+    <figure class="fig"><img src="assets/disney/mafab-acolyte.jpg" alt="A Star Wars: The Acolyte homepage takeover on mafab.hu"></figure>
+  </div>
+
+  <h2 class="sub">Radio</h2>
+  <p>On radio we ran partnership formats on top of airtime. These were on-air games where listeners could win Disney prizes.</p>
+
+  <h2 class="sub">The food delivery partnership</h2>
+  <p>For the Sh&#333;gun launch we built a partnership with a food delivery service. In the campaign window, deliveries went out in branded bags with a fan, each carrying a QR code that led straight to Disney+ sign-up. We also got Disney+ menus into specific restaurants on the platform and made video content around the idea of ordering in and watching the new series. <span class="hi">The partnership worked well and was repeated for later launches.</span></p>
+  <figure class="fig fig-narrow">
+    <img src="assets/disney/shogun-fan.jpg" alt="A Shōgun branded paper fan with a QR code to Disney+ sign-up">
+  </figure>
 </section>
 """
 
@@ -788,7 +839,7 @@ SKILLS = [
      "Built the competitive content database behind the Publicis Instagram relaunch and wrote the strategy out of it. I have done the same job twice since: Synetech's LinkedIn, in Spanish, and a Hungarian page supporting the LGBTQ+ community.",
      "publicis.html", "The Publicis case study"),
     ("Paid search",
-     "Google Ads for AirHint, planning and running search campaigns against CPA and CPC in English, Spanish and Portuguese.",
+     "Google Ads for AirHint, where I ran search campaigns against CPA and CPC in English, Spanish and Portuguese on a small budget.",
      "airhint.html", "What that involves"),
     ("SEO",
      "I worked alongside the SEO team at Publicis. At AirHint I analyse page content and look for the keywords worth building a page around. AirHint currently comes out first on the results page for the searches we target.",
@@ -800,11 +851,11 @@ SKILLS = [
      "Daily work in Google Analytics 4 and Search Console. The most useful piece so far was working out where AirHint's AI referral traffic comes from and why we get cited, which turned it into a channel we are deliberately growing.",
      "airhint.html", "What that found"),
     ("CRM and email",
-     "Mailchimp at Synetech. At AirHint I am building the CRM and the email lifecycle in Brevo from the bottom up.",
+     "Mailchimp at Synetech. At AirHint I designed a consent-based email programme in Brevo for 150k subscribers, with segments and triggers based on each user's own price predictions.",
      None, None),
     ("Integrated media planning",
-     "Two years planning and monitoring campaigns across TV, out of home, radio, digital and partnerships in five European markets. The largest was Disney, with a yearly budget over €4M, planned and tracked in Excel. Also Disney+, National Geographic, Disney Channel, Lindt, Diageo and Spin Master.",
-     None, None),
+     "Two years planning and monitoring campaigns across TV, out of home, radio, digital and partnerships. The largest was Disney, with budgets of several million euros a year, planned and tracked in Excel. Also Lindt, Diageo and Spin Master.",
+     "disney.html", "The Disney case study"),
     ("Quantitative research",
      "A between-subjects experiment with 192 participants for my master's thesis, analysed in SPSS. Before that, a 213-respondent survey for my bachelor's.",
      "research.html", "Both write-ups"),
@@ -821,7 +872,7 @@ SKILLS = [
 
 TOOLS = [
     # (name, category key, level, description)
-    ("Google Ads", "paid", "daily", "AirHint. Search campaigns in English, Spanish and Portuguese for a flight price alert product."),
+    ("Google Ads", "paid", "used", "AirHint. Search campaigns in English, Spanish and Portuguese for a flight price alert product."),
     ("Google Analytics 4", "analytics", "daily", "AirHint, daily. Traffic, conversion paths and which pages carry the affiliate clicks. I also set up the event tracking on my own site."),
     ("Google Search Console", "analytics", "daily", "AirHint. Which queries bring traffic and which pages are worth improving."),
     ("GrowthBook", "analytics", "daily", "AirHint. Running and reading A/B tests on the product."),
@@ -873,7 +924,7 @@ SKILL_HINTS = {
     'CRO and A/B testing': 'Homepage conversion analysis, live tests in GrowthBook',
     'Traffic analysis': 'GA4 and Search Console, daily',
     'CRM and email': 'Mailchimp, now building Brevo from scratch',
-    'Integrated media planning': 'Five markets, €4M+ a year, Disney',
+    'Integrated media planning': 'TV, outdoor, radio, digital, Disney',
     'Quantitative research': 'n=192 experiment, SPSS',
     'Social and creator campaigns': 'Nike, Costa Coffee, ChatGPT',
     'Design': 'Illustrator, to a brand book',
@@ -1117,7 +1168,9 @@ research_booking = """
 page("index.html", "Aron Arany-Toth — Digital marketing and growth",
      "Digital marketing and growth. Paid search, content strategy and campaign analysis. Madrid, working in English, Spanish and Hungarian.", home)
 page("airhint.html", "Growth at AirHint — Aron Arany-Toth",
-     "Paid search, SEO, conversion work, experiments and the CRM for AirHint, a flight price prediction product.", airhint)
+     "The deals page relaunch, site navigation, A/B testing, AI search traffic and the CRM for AirHint, a flight price prediction product.", airhint)
+page("disney.html", "Planning Disney's media in Hungary — Aron Arany-Toth",
+     "Disney+, National Geographic and Disney Channel launches across TV, outdoor, radio, online and partnerships at Publicis Groupe Hungary.", disney)
 page("publicis.html", "Publicis Groupe Hungary on Instagram — Aron Arany-Toth",
      "A content strategy built from a coded database of the competitive set, and what it did to the numbers.", publicis)
 page("research.html", "Does an AI recommendation change what you buy? — Aron Arany-Toth",
